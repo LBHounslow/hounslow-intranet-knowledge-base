@@ -52,6 +52,10 @@ register_deactivation_hook( __FILE__, function() { require_once KNOWLEDGE_BASE_D
 /* Load required classes. */
 require_once KNOWLEDGE_BASE_DIR . 'src/Util.php';
 require_once KNOWLEDGE_BASE_DIR . 'src/PluginPublic.php';
+require_once KNOWLEDGE_BASE_DIR . 'src/PostTypes.php';
+
+/* Run classes on init hook. */
+add_action( 'init', array( 'KnowledgeBase\PostTypes', 'init' ));
 
 /* Run classes on plugins_loaded hook. */
 add_action( 'plugins_loaded', array( 'KnowledgeBase\PluginPublic', 'init' ));
