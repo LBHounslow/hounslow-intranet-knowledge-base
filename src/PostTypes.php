@@ -123,8 +123,8 @@ class PostTypes {
 			'labels' => PostTypes::labels( $label_singular, $label_plural, $label_featured_image )
 			),
 			'options' => array(
-				'has_cats' => true,
-				'has_tags' => true
+				'has_cats' => false,
+				'has_tags' => false
 			)
 		);
 		// ---> End of Definition
