@@ -54,6 +54,7 @@ require_once KNOWLEDGE_BASE_DIR . 'src/Util.php';
 require_once KNOWLEDGE_BASE_DIR . 'src/PluginPublic.php';
 require_once KNOWLEDGE_BASE_DIR . 'src/PostTypes.php';
 require_once KNOWLEDGE_BASE_DIR . 'src/Taxonomies.php';
+require_once KNOWLEDGE_BASE_DIR . 'src/Relationships.php';
 
 /* Run classes on init hook. */
 add_action( 'init', array( 'KnowledgeBase\PostTypes', 'init' ));
@@ -64,6 +65,9 @@ add_action( 'plugins_loaded', array( 'KnowledgeBase\PluginPublic', 'init' ));
 
 /* Run classes on widgets_init hook. */
 add_action( 'widgets_init',  array( 'KnowledgeBase\PluginPublic', 'register_widgets' ));
+
+/* Run classes on mb_relationships_init hook. */
+add_action( 'mb_relationships_init', array( 'KnowledgeBase\Relationships', 'register_relationships' ));
 
 
 /*----------------------------------------------------------------------------*
