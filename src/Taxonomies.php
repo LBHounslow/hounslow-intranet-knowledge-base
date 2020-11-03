@@ -316,7 +316,7 @@ class Taxonomies {
 			'meta_box_cb' => null,
 
 			// Whether to allow automatic creation of taxonomy columns on associated post-types table.
-			'show_admin_column' => false,
+			'show_admin_column' => true,
 
 			// Include a description of the taxonomy.
 			'description' => $description,
