@@ -73,7 +73,7 @@ class PostTypes {
 
 		$post_types = array();
 
-		// Liberal History Events Post Type Definition --->
+		// Hounslow Intranet Guide Post Type Definition --->
 		$post_type_name = 'guide';
 		$label_singular = 'Guide';
 		$label_plural = 'Guides';
