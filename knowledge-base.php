@@ -3,7 +3,7 @@
  * Plugin Name:       Knowledge Base
  * Plugin URI:        https://hounslow.digital/plugins/hounslow-intranet-custom
  * Description:       WordPress plugin for turning a website into a knowledge base.
- * Version:           0.0.1
+ * Version:           1.0.f
  * Requires at least: 5.4
  * Requires PHP:      7.3.2
  * Author:            London Borough of Hounslow
